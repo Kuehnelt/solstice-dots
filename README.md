@@ -40,17 +40,7 @@ My dotfiles
 
 ## Keyboard Keyd Mods
 
-### 1. Core Concepts & Special Key Behaviors
-
-This section describes the primary modifications to modifier keys and other special keys in the `[main]` layer.
-
 ### Modifier Behaviors
-
-- **One-Shot Keys**: The `Shift`, `Control`, and `leftalt` keys are configured as **one-shot** modifiers.
-  - **Tap** them once, and the _next key you press_ will be modified (e.g., tap `shift`, then `a` to get `A`).
-  - **Hold** them down to use them as traditional modifier keys.
-
-- **Overloaded Keys**: Two keys have different functions depending on whether you tap or hold them.
 
 | Key            | Behavior (Tap)                            | Behavior (Hold)            |
 | :------------- | :---------------------------------------- | :------------------------- |
@@ -61,8 +51,6 @@ This section describes the primary modifications to modifier keys and other spec
 ---
 
 ## 2. Right Alt (`altgr`) Layer Keymaps
-
-This is your main custom layer, activated by using the **Right Alt** key (as a one-shot tap or by holding it down). The keys are arranged by their position on a QWERTY keyboard layout.
 
 ### Homerow
 
@@ -101,8 +89,6 @@ This is your main custom layer, activated by using the **Right Alt** key (as a o
 
 ## 3. Miscellaneous Remaps
 
-A minor remap found in the `[shift]` layer.
-
 | Key Combination       | Outputs Character | Original Command |
 | :-------------------- | :---------------- | :--------------- |
 | **`Shift`** + **`;`** | `?`               | `S-/`            |
@@ -113,15 +99,14 @@ A minor remap found in the `[shift]` layer.
 
 Commands for system updates and maintenance.
 
-| Alias      | Command                   | Description                                       |
-| :--------- | :------------------------ | :------------------------------------------------ |
-| `update`   | `sudo dnf upgrade -y`     | Updates all system packages on Fedora (auto-yes). |
-| `install`  | `sudo dnf install`        | Installs a new package using DNF.                 |
-| `fpupdate` | `flatpak update`          | Updates all Flatpak applications.                 |
-| `c`        | `clear`                   | Clears the terminal screen.                       |
-| `reboot`   | `sudo reboot`             | Reboots the system.                               |
-| `shutdown` | `sudo shutdown -h now`    | Shuts down the system immediately.                |
-| `typioca`  | `~/typioca/execs/typioca` | Runs the custom `typioca` executable.             |
+| Alias      | Command                | Description                                       |
+| :--------- | :--------------------- | :------------------------------------------------ |
+| `update`   | `sudo dnf upgrade -y`  | Updates all system packages on Fedora (auto-yes). |
+| `install`  | `sudo dnf install`     | Installs a new package using DNF.                 |
+| `fpupdate` | `flatpak update`       | Updates all Flatpak applications.                 |
+| `c`        | `clear`                | Clears the terminal screen.                       |
+| `reboot`   | `sudo reboot`          | Reboots the system.                               |
+| `shutdown` | `sudo shutdown -h now` | Shuts down the system immediately.                |
 
 ---
 
@@ -170,8 +155,6 @@ Commands that combine multiple tools for a powerful workflow.
 
 ### 5. Modern CLI Tool Replacements
 
-These aliases replace standard Unix commands with modern, more feature-rich alternatives.
-
 | Alias | Replaces | Command                  | Description                                              |
 | :---- | :------- | :----------------------- | :------------------------------------------------------- |
 | `ls`  | `ls`     | `eza --icons`            | Lists directory contents with file-specific icons.       |
@@ -183,9 +166,9 @@ These aliases replace standard Unix commands with modern, more feature-rich alte
 
 ### 6. `nnn` File Manager Configuration
 
-Setup for the `nnn` file manager, enabling plugins and "cd on quit" functionality.
+| Command        | Description                                                                                                              |
+| :------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| `nnn`          | Alias for `nnn -P p`, which starts `nnn` with the `preview-tui` plugin active.                                           |
+| `n` (Function) | A wrapper function that allows you to quit `nnn` and have your shell automatically `cd` into the directory you were last |
 
-| Command        | Description                                                                                                                                                                     |
-| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `nnn`          | Alias for `nnn -P p`, which starts `nnn` with the `preview-tui` plugin active.                                                                                                  |
-| `n` (Function) | A wrapper function that allows you to quit `nnn` and have your shell automatically `cd` into the directory you were last viewing. This makes `nnn` a powerful `cd` replacement. |
+---

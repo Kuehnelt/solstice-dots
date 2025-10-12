@@ -1,0 +1,5 @@
+[General]
+theme=catppuccin-mocha-red
+
+[Applications]
+catppuccin-mocha-red=okular, dolphin

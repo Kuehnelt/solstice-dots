@@ -7,6 +7,9 @@ My dotfiles
 - Lazyvim
 - Lazygit
 - N3
+
+- Taskwarrior
+
 - Glow
 - Zoxide
 - Eza

@@ -13,8 +13,17 @@
 </div>
 
 # Description
+These are my personal dotfiles for daily driving Fedora KDE. This setup is a bit of a Frankenstein's monster, with little original work done by me. Most of it was inspired by a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master)'s and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/)'s dots, and many of the configs are just slightly tweaked versions from the official [Catppuccin](https://catppuccin.com/) repositories.
 
-Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was inspirde from a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master) and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/) configs. Everything is Catppuccin Mocha themed, with a heavy focus on CLI tools and easy of use. This repository contains: general configs for KDE and other applications, my custom shortcuts and aliases, my keyboard mods with keyd.
+Everything is themed with Catppuccin Mocha, with a heavy focus on CLI tools and ease of use.
+
+This repository contains:
+
+    General configs for KDE and other applications
+
+    My custom shortcuts and aliases
+
+    My keyboard mods using keyd
 
 # Preview
 
@@ -32,7 +41,7 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 
 # Themes & Configs
 
-- Wallpapers: in ./walls-catppuccin-mocha/
+- Wallpapers: filtered from [Orangci collection](https://github.com/orangci/walls-catppuccin-mocha) in ./walls-catppuccin-mocha/
 - Color Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/kde)
 - Plasma Style: [Amethyst Haze](https://store.kde.org/p/2218601)
 - Kvantum Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/Kvantum)
@@ -69,7 +78,7 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 
 # Keyboard Keyd Mods
 
-Most of it is set as a alternate layer set to AltGr, mostly for those symbols I most frequently use in my day to day writing.
+Most of this configuration is an alternate keyboard layer mapped to the <kbd>AltGr</kbd> key. This provides easy access to the symbols I use most frequently in my daily writing.
 
    <img src="./screnshots/keyboard.png">
 
@@ -79,25 +88,25 @@ Most of it is set as a alternate layer set to AltGr, mostly for those symbols I 
 
 | Shortcut                                                              | Action Description                 |
 | --------------------------------------------------------------------- | ---------------------------------- |
-| <kbd>Super</kbd>                                                      | Launchs Rofi                       |
-| <kbd>Super</kbd> + <kbd>T</kbd>                                       | Launchs Terminal (`kitty`)         |
-| <kbd>Super</kbd> + <kbd>Z</kbd>                                       | Launchs Zen Browser                |
-| <kbd>Super</kbd> + <kbd>E</kbd>                                       | Laucnhs File Explorer              |
-| <kbd>Super</kbd> + <kbd>S</kbd>                                       | Launchs Spotify                    |
-| <kbd>Super</kbd> + <kbd>O</kbd>                                       | Launchs Obsidian                   |
-| <kbd>Super</kbd> + <kbd>R</kbd>                                       | Launchs Okular                     |
+| <kbd>Super</kbd>                                                      | Launches Rofi                       |
+| <kbd>Super</kbd> + <kbd>T</kbd>                                       | Launches Terminal (`kitty`)         |
+| <kbd>Super</kbd> + <kbd>Z</kbd>                                       | Launches Zen Browser                |
+| <kbd>Super</kbd> + <kbd>E</kbd>                                       | Launches File Explorer              |
+| <kbd>Super</kbd> + <kbd>S</kbd>                                       | Launches Spotify                    |
+| <kbd>Super</kbd> + <kbd>O</kbd>                                       | Launches Obsidian                   |
+| <kbd>Super</kbd> + <kbd>R</kbd>                                       | Launches Okular                     |
 | <kbd>Super</kbd> + <kbd>W</kbd>                                       | Toogles Overview                   |
 | <kbd>Super</kbd> + <kbd>G</kbd>                                       | Toogles Overview (grade)           |
 | <kbd>Super</kbd> + <kbd>Q</kbd>                                       | Closes Window                      |
-| <kbd>Super</kbd> + <kbd>F</kbd>                                       | Toogles Floatting Window           |
-| <kbd>Super</kbd> + <kbd>J/H/K/L</kbd>                                 | Changes Window Focus               |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>J/H/L/K</kbd>               | Changes Window Size                |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>J/H/L/K</kbd>              | Move Window                        |
-| <kbd>Super</kbd> + <kbd>Tab</kbd>                                     | Minimize Window                    |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>J/H/L/K</kbd>                | Changes Screen Focus               |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L</kbd> | Moves Window to Screen             |
-| <kbd>Ctrl</kbd> + <kbd>,/.</kbd>                                      | Changes to next/previous V-Desktop |
-| <kbd>Ctrk</kbd> + <kbd>1/2/3/4/5</kbd>                                | Changes to numbered V-Desktop      |
+| <kbd>Super</kbd> + <kbd>F</kbd>                                       | Toogles Floating Window           |
+| <kbd>Super</kbd> + <kbd>H/J/K/L</kbd>                                 | Changes Window Focus               |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H/J/K/L</kbd>               | Changes Window Size                |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>H/J/K/L</kbd>              | Moves Window                        |
+| <kbd>Super</kbd> + <kbd>Tab</kbd>                                     | Minimizes Window                    |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>H/J/K/L</kbd>                | Changes Screen Focus               |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L</kbd> | Moves Window to next/previous Screen             |
+| <kbd>Ctrl</kbd> + <kbd>,/.</kbd>                                      | Switches to next/previous Virtual Desktop |
+| <kbd>Ctrk</kbd> + <kbd>1/2/3/4/5</kbd>                                | Switches to a numbered Virtual Desktop      |
 
 ## 1. System & Package Management
 

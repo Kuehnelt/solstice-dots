@@ -1,4 +1,5 @@
 <div align="center">
+    <img src="./.config/rofi/girl-3.png">
     <h1>Solstice Dots</h1>
     <h3></h3>
 </div>

@@ -53,26 +53,27 @@ Most of it is set as a alternate layer set to AltGr, mostly for those symbols i 
 
 ## 0. Custom Shortcuts
 
-| Shortcut                                           | Action Description                              |
-| -------------------------------------------------- | ----------------------------------------------- |
-| <kbd>Super</kbd> + <kbd>T</kbd>                    | Open terminal (`kitty`)                         |
-| <kbd>Super</kbd> + <kbd>Q</kbd>                    | Kill the active window                          |
-| <kbd>Super</kbd> + <kbd>M</kbd>                    | Exit Hyprland session                           |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Open file manager (`nautilus`)                  |
-| <kbd>Super</kbd> + <kbd>E</kbd>                    | Launch terminal file manager (`yazi.sh`)        |
-| <kbd>Super</kbd> + <kbd>B</kbd>                    | Open browser (`zen-browser`)                    |
-| <kbd>Super</kbd> + <kbd>V</kbd>                    | Toggle floating mode                            |
-| <kbd>Super</kbd> + <kbd>Space</kbd>                | Open app launcher (`rofi -show drun`)           |
-| <kbd>Super</kbd> + <kbd>F</kbd>                    | Toggle fullscreen                               |
-| <kbd>Super</kbd> + <kbd>D</kbd>                    | Toggle split layout (dwindle only)              |
-| <kbd>Super</kbd> + <kbd>N</kbd>                    | Open terminal with notes (`open_notes.sh`)      |
-| <kbd>Super</kbd> + <kbd>W</kbd>                    | Open WiFi selector (`rofi/wifi.sh`)             |
-| <kbd>Super</kbd> + <kbd>G</kbd>                    | Switch wallpaper (`rofi/wallpaper_switcher.sh`) |
-| <kbd>Super</kbd> + <kbd>A</kbd>                    | Launch AI assistant (`askai.sh`)                |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Take screenshot (`snapshot.sh`)                 |
-| <kbd>Super</kbd> + <kbd>I</kbd>                    | Open logout screen (`wlogout`)                  |
-| <kbd>Super</kbd> + <kbd>P</kbd>                    | Open Install manager (`rofi/list-installer.sh`) |
-| <kbd>Super</kbd> + <kbd>R</kbd>                    | Open Repository list (`rofi/repo-rofi.sh`)      |
+| Shortcut                                                              | Action Description                 |
+| --------------------------------------------------------------------- | ---------------------------------- |
+| <kbd>Super</kbd>                                                      | Launchs Rofi                       |
+| <kbd>Super</kbd> + <kbd>T</kbd>                                       | Launchs Terminal (`kitty`)         |
+| <kbd>Super</kbd> + <kbd>Z</kbd>                                       | Launchs Zen Browser                |
+| <kbd>Super</kbd> + <kbd>E</kbd>                                       | Laucnhs File Explorer              |
+| <kbd>Super</kbd> + <kbd>S</kbd>                                       | Launchs Spotify                    |
+| <kbd>Super</kbd> + <kbd>O</kbd>                                       | Launchs Obsidian                   |
+| <kbd>Super</kbd> + <kbd>R</kbd>                                       | Launchs Okular                     |
+| <kbd>Super</kbd> + <kbd>W</kbd>                                       | Toogles Overview                   |
+| <kbd>Super</kbd> + <kbd>G</kbd>                                       | Toogles Overview (grade)           |
+| <kbd>Super</kbd> + <kbd>Q</kbd>                                       | Closes Window                      |
+| <kbd>Super</kbd> + <kbd>F</kbd>                                       | Toogles Floatting Window           |
+| <kbd>Super</kbd> + <kbd>J/H/K/L</kbd>                                 | Changes Window Focus               |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>J/H/L/K</kbd>               | Changes Window Size                |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>J/H/L/K</kbd>              | Move Window                        |
+| <kbd>Super</kbd> + <kbd>Tab</kbd>                                     | Minimize Window                    |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>J/H/L/K</kbd>                | Changes Screen Focus               |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L</kbd> | Moves Window to Screen             |
+| <kbd>Ctrl</kbd> + <kbd>,/.</kbd>                                      | Changes to next/previous V-Desktop |
+| <kbd>Ctrk</kbd> + <kbd>1/2/3/4/5</kbd>                                | Changes to numbered V-Desktop      |
 
 ## 1. System & Package Management
 

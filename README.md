@@ -59,7 +59,7 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 
 Most of it is set as a alternate layer set to AltGr, mostly for those symbols I most frequently use in my day to day writing.
 
-   <img src="./screenshots/keyboard.png">
+   <img src="./screnshots/keyboard.png">
 
 # Shortcuts and Aliases
 

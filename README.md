@@ -3,6 +3,15 @@
     <h3></h3>
 </div>
 
+<div align="center">
+<p>
+<a href="https://github.com/Kuehnelt/solstice-dots/stargazers"><img src="https://img.shields.io/github/stars/Kuehnelt/solstice-dots?style=for-the-badge&logo=starship&color=89b4fa&logoColor=89b4fa&labelColor=11111b"  alt="stars"></a>&nbsp;&nbsp;
+<a href="https://github.com/Kuehnelt/solstice-dots/forks"><img src="https://img.shields.io/github/forks/Kuehnelt/solstice-dots?style=for-the-badge&logo=appveyor&logoColor=a6e3a1&label=Forks&labelColor=11111b&color=a6e3a1" alt="forks"></a>&nbsp;&nbsp;
+<a href="https://github.com/Kuehnelt/solstice-dots/commits/master/"><img src="https://img.shields.io/github/last-commit/Kuehnelt/solstice-dots?style=for-the-badge&logo=github&logoColor=cba6f7&label=Last%20Commit&labelColor=11111b&color=cba6f7" alt="last commit"></a>&nbsp;&nbsp;
+<a href="https://github.com/Kuehnelt/solstice-dots/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kuehnelt/solstice-dots?style=for-the-badge&color=f38ba8&logoColor=f38ba8&labelColor=11111b" alt="license"></a>&nbsp;&nbsp;
+</p>
+</div>
+
 # Description
 
 Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was inspirde from a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master) and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/) configs. Everything is Catppuccin Mocha themed, with a heavy focus on CLI tools and easy of use. This repository contains: general configs for KDE and other applications, my custom shortcuts and aliases, my keyboard mods with keyd.

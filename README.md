@@ -9,14 +9,17 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 
 # Preview
 
-# Used applications
+<img src="./screnshots/screen1.png">
 
-- Lazyvim
-- Lazygit
-- Rofi
-- N3
-- Taskwarrior
-- Glow
+<img src="./screnshots/screen2.png">
+
+<img src="./screnshots/screen3.png">
+
+<img src="./screnshots/rofi.png">
+
+<img src="./screnshots/obsidian.png">
+
+<img src="./screnshots/apps.png">
 
 # Themes & Configs
 
@@ -24,7 +27,7 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 - Color Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/kde)
 - Plasma Style: [Amethyst Haze](https://store.kde.org/p/2218601)
 - Kvantum Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/Kvantum)
-- Lockscreen: xxxxxxxxxxxxxxxxxxx
+- Lockscreen: [SDDM Cattpuccin Mocha Red](https://github.com/catppuccin/sddm)
 - Icon Theme: [Yet Another Monochrome Icon Set for KDE Plasma](https://store.kde.org/p/2303161)
 - Font: Karla and Fira Code
 - Desktop Effects:

@@ -1,22 +1,24 @@
-# Solstice Dots
+<div align="center">
+    <h1>【 Solstice Dots 】</h1>
+    <h3></h3>
+</div>
 
-My dotfiles
+# Description
 
-## Main CLI Tools
+Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was inspirde from a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master) and [Emmale64](https://www.reddit.com/user/Emmale64/) configs. Everything is Catppuccin Mocha themed, with a heavy focus on CLI tools and easy of use. This repository contains: general configs for KDE and other applications, my custom shortcuts and aliases, my keyboard mods with keyd.
+
+# Preview
+
+# Used applications
 
 - Lazyvim
 - Lazygit
+- Rofi
 - N3
-
 - Taskwarrior
-
 - Glow
-- Zoxide
-- Eza
-- Bat
-- fzf
 
-## KDE Configs
+# KDE Configs
 
 - Wallpapers: in ./walls-catppuccin-mocha/
 - Color Theme: Catppuccin Mocha Red
@@ -34,71 +36,45 @@ My dotfiles
   - 85% Opacity for innactive Windows
   - 90% Opacity for active Windows
 - KWin Scripts:
-  - Full Opaxity Fullscreen
+  - Full Opacity Fullscreen
   - Krohnkite
 - Widgets:
   - Panel: .config/plasma-org.kde.plasma.desktop-appletsrc
   - Panel Colorizer: Transparent preset
   - Wallpaper Effects: Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color
 
-## Keyboard Keyd Mods
+# Keyboard Keyd Mods
 
-### Modifier Behaviors
+Most of it is set as a alternate layer set to AltGr, mostly for those symbols i most frequently use in my day to day writing.
 
-| Key            | Behavior (Tap)                            | Behavior (Hold)            |
-| :------------- | :---------------------------------------- | :------------------------- |
-| **`capslock`** | Sends `Escape` (`esc`)                    | Acts as `Control` (`ctrl`) |
-| **`leftalt`**  | Sends `Backspace`                         | Acts as `Alt`              |
-| **`esc`**      | The physical `esc` key is now `capslock`. | (no hold function)         |
+   <img src="./screenshots/keyboard.png">
 
----
+# Shortcuts and Aliases
 
-## 2. Right Alt (`altgr`) Layer Keymaps
+## 0. Custom Shortcuts
 
-### Homerow
+| Shortcut                                           | Action Description                              |
+| -------------------------------------------------- | ----------------------------------------------- |
+| <kbd>Super</kbd> + <kbd>T</kbd>                    | Open terminal (`kitty`)                         |
+| <kbd>Super</kbd> + <kbd>Q</kbd>                    | Kill the active window                          |
+| <kbd>Super</kbd> + <kbd>M</kbd>                    | Exit Hyprland session                           |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Open file manager (`nautilus`)                  |
+| <kbd>Super</kbd> + <kbd>E</kbd>                    | Launch terminal file manager (`yazi.sh`)        |
+| <kbd>Super</kbd> + <kbd>B</kbd>                    | Open browser (`zen-browser`)                    |
+| <kbd>Super</kbd> + <kbd>V</kbd>                    | Toggle floating mode                            |
+| <kbd>Super</kbd> + <kbd>Space</kbd>                | Open app launcher (`rofi -show drun`)           |
+| <kbd>Super</kbd> + <kbd>F</kbd>                    | Toggle fullscreen                               |
+| <kbd>Super</kbd> + <kbd>D</kbd>                    | Toggle split layout (dwindle only)              |
+| <kbd>Super</kbd> + <kbd>N</kbd>                    | Open terminal with notes (`open_notes.sh`)      |
+| <kbd>Super</kbd> + <kbd>W</kbd>                    | Open WiFi selector (`rofi/wifi.sh`)             |
+| <kbd>Super</kbd> + <kbd>G</kbd>                    | Switch wallpaper (`rofi/wallpaper_switcher.sh`) |
+| <kbd>Super</kbd> + <kbd>A</kbd>                    | Launch AI assistant (`askai.sh`)                |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Take screenshot (`snapshot.sh`)                 |
+| <kbd>Super</kbd> + <kbd>I</kbd>                    | Open logout screen (`wlogout`)                  |
+| <kbd>Super</kbd> + <kbd>P</kbd>                    | Open Install manager (`rofi/list-installer.sh`) |
+| <kbd>Super</kbd> + <kbd>R</kbd>                    | Open Repository list (`rofi/repo-rofi.sh`)      |
 
-| Key Combination           | Outputs Character     | Original Command      |
-| :------------------------ | :-------------------- | :-------------------- |
-| **`Right Alt`** + **`a`** | `@`                   | `S-2`                 |
-| **`Right Alt`** + **`s`** | `!`                   | `S-1`                 |
-| **`Right Alt`** + **`d`** | _`?`_                 | `S-ro` (non-standard) |
-| **`Right Alt`** + **`f`** | `:`                   | `S-/`                 |
-| **`Right Alt`** + **`g`** | `0`                   | `0`                   |
-| **`Right Alt`** + **`h`** | `$`                   | `S-4`                 |
-| **`Right Alt`** + **`j`** | `''` (grave/backtick) | `grave`               |
-| **`Right Alt`** + **`k`** | `"` (tilde)           | `S-grave`             |
-| **`Right Alt`** + **`l`** | _`«`_ (`AltGr`+`z`)   | `G-z`                 |
-| **`Right Alt`** + **`;`** | _`»`_ (`AltGr`+`x`)   | `G-x`                 |
-
-### Top Row
-
-| Key Combination           | Outputs Character   | Original Command |
-| :------------------------ | :------------------ | :--------------- |
-| **`Right Alt`** + **`w`** | `(`                 | `S-9`            |
-| **`Right Alt`** + **`e`** | _`°`_ (`AltGr`+`e`) | `G-e`            |
-| **`Right Alt`** + **`r`** | `_` (underscore)    | `S--`            |
-| **`Right Alt`** + **`u`** | _`§`_ (`AltGr`+`=`) | `G-=`            |
-| **`Right Alt`** + **`i`** | _`ª`_ (`AltGr`+`]`) | `G-]`            |
-| **`Right Alt`** + **`o`** | `)`                 | `S-0`            |
-
-### Bottom Row
-
-| Key Combination           | Outputs Character | Original Command |
-| :------------------------ | :---------------- | :--------------- |
-| **`Right Alt`** + **`v`** | `#`               | `S-3`            |
-| **`Right Alt`** + **`n`** | `*`               | `S-8`            |
-
----
-
-## 3. Miscellaneous Remaps
-
-| Key Combination       | Outputs Character | Original Command |
-| :-------------------- | :---------------- | :--------------- |
-| **`Shift`** + **`;`** | `?`               | `S-/`            |
-
-## Shortcuts and Aliases
-
-### 1. System & Package Management
+## 1. System & Package Management
 
 Commands for system updates and maintenance.
 
@@ -113,7 +89,7 @@ Commands for system updates and maintenance.
 
 ---
 
-### 2. File System Navigation
+## 2. File System Navigation
 
 Shortcuts for moving around the file system more efficiently.
 
@@ -127,7 +103,7 @@ Shortcuts for moving around the file system more efficiently.
 
 ---
 
-### 3. Git Workflow
+## 3. Git Workflow
 
 Aliases to speed up common Git operations.
 
@@ -142,7 +118,7 @@ Aliases to speed up common Git operations.
 
 ---
 
-### 4. Power User & Workflow Integrations
+## 4. Power User & Workflow Integrations
 
 Commands that combine multiple tools for a powerful workflow.
 
@@ -156,7 +132,7 @@ Commands that combine multiple tools for a powerful workflow.
 
 ---
 
-### 5. Modern CLI Tool Replacements
+## 5. Modern CLI Tool Replacements
 
 | Alias | Replaces | Command                  | Description                                              |
 | :---- | :------- | :----------------------- | :------------------------------------------------------- |
@@ -167,7 +143,7 @@ Commands that combine multiple tools for a powerful workflow.
 
 ---
 
-### 6. `nnn` File Manager Configuration
+## 6. `nnn` File Manager Configuration
 
 | Command        | Description                                                                                                              |
 | :------------- | :----------------------------------------------------------------------------------------------------------------------- |

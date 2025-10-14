@@ -1,11 +1,11 @@
 <div align="center">
-    <h1>【 Solstice Dots 】</h1>
+    <h1>Solstice Dots</h1>
     <h3></h3>
 </div>
 
 # Description
 
-Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was inspirde from a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master) and [Emmale64](https://www.reddit.com/user/Emmale64/) configs. Everything is Catppuccin Mocha themed, with a heavy focus on CLI tools and easy of use. This repository contains: general configs for KDE and other applications, my custom shortcuts and aliases, my keyboard mods with keyd.
+Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was inspirde from a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master) and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/) configs. Everything is Catppuccin Mocha themed, with a heavy focus on CLI tools and easy of use. This repository contains: general configs for KDE and other applications, my custom shortcuts and aliases, my keyboard mods with keyd.
 
 # Preview
 
@@ -18,34 +18,46 @@ Those are my personal dotfiles for dailydriving in Fedora KDE. Most of it was in
 - Taskwarrior
 - Glow
 
-# KDE Configs
+# Themes & Configs
 
 - Wallpapers: in ./walls-catppuccin-mocha/
-- Color Theme: Catppuccin Mocha Red
-- Plasma Style: Amethyst
-- Icon Theme: Yet Another Monochrome Icon Set for KDE Plasma
-- Cursor: Catppuccin Red default
+- Color Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/kde)
+- Plasma Style: [Amethyst Haze](https://store.kde.org/p/2218601)
+- Kvantum Theme: [Catppuccin Mocha Red](https://github.com/catppuccin/Kvantum)
+- Lockscreen: xxxxxxxxxxxxxxxxxxx
+- Icon Theme: [Yet Another Monochrome Icon Set for KDE Plasma](https://store.kde.org/p/2303161)
 - Font: Karla and Fira Code
 - Desktop Effects:
-  - Better Blur
-  - Geometry Change
-  - Rounded Corners (15pt, 3pt borders)
-  - Aura Glow
+  - [Better Blur](https://github.com/taj-ny/kwin-effects-forceblur)
+  - [Geometry Change](https://store.kde.org/p/2136283)
+  - [Rounded Corners (15pt, 3pt borders)](https://github.com/matinlotfali/KDE-Rounded-Corners)
+  - [Aura Glow](https://github.com/Schneegans/Burn-My-Windows)
 - Window Rules:
   - No title bars
   - 85% Opacity for innactive Windows
   - 90% Opacity for active Windows
 - KWin Scripts:
-  - Full Opacity Fullscreen
-  - Krohnkite
+  - [Full Opacity Fullscreen](https://store.kde.org/p/2316974)
+  - [Krohnkite](https://github.com/anametologin/krohnkite)
 - Widgets:
-  - Panel: .config/plasma-org.kde.plasma.desktop-appletsrc
-  - Panel Colorizer: Transparent preset
-  - Wallpaper Effects: Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color
+  - Panel configs: .config/plasma-org.kde.plasma.desktop-appletsrc
+  - [Panel Colorizer](https://github.com/luisbocanegra/plasma-panel-colorizer): Transparent preset
+  - [Wallpaper Effects](https://github.com/luisbocanegra/plasma-wallpaper-effects): Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color.
+- [Rofi](https://github.com/catppuccin/rofi): Catppuccin Mocha Theme
+- [Kitty](https://github.com/catppuccin/kitty): Catppuccin Mocha Theme
+- [Fish](https://github.com/catppuccin/fish):Catppuccin Mocha Theme
+- Starship: Slightly modified [Greed-d Simple Catppuccin Prompt](https://github.com/catppuccin/starship/discussions/18)
+- Nvim:
+  - [Lazyvim](https://github.com/LazyVim/LazyVim)
+  - [Catppuccin Theme](https://github.com/catppuccin/nvim)
+  - [Obsidian Plugin](https://github.com/obsidian-nvim/obsidian.nvim)
+- Obsidian: [AnuPpuccin](https://github.com/AnubisNekhet/anuppuccin)
+- Spotify: [Spicetify Cattpuccin Mocha Theme](https://github.com/catppuccin/spicetify)
+- Zen Browser: [Cattpuccin Theme](https://github.com/catppuccin/zen-browser)
 
 # Keyboard Keyd Mods
 
-Most of it is set as a alternate layer set to AltGr, mostly for those symbols i most frequently use in my day to day writing.
+Most of it is set as a alternate layer set to AltGr, mostly for those symbols I most frequently use in my day to day writing.
 
    <img src="./screenshots/keyboard.png">
 
@@ -94,13 +106,23 @@ Commands for system updates and maintenance.
 
 Shortcuts for moving around the file system more efficiently.
 
-| Alias/Function | Command                            | Description                                                |
-| :------------- | :--------------------------------- | :--------------------------------------------------------- |
-| `..`           | `cd ..`                            | Go up one directory.                                       |
-| `...`          | `cd ../..`                         | Go up two directories.                                     |
-| `....`         | `cd ../../..`                      | Go up three directories.                                   |
-| `cd`           | `z`                                | Uses **zoxide** for intelligent, fuzzy directory jumping.  |
-| `mkcd <dir>`   | `mkdir -p "$argv"; and cd "$argv"` | Creates a new directory and immediately navigates into it. |
+| Alias/Function | Command                            | Description                                                                 |
+| :------------- | :--------------------------------- | :-------------------------------------------------------------------------- |
+| `..`           | `cd ..`                            | Go up one directory.                                                        |
+| `...`          | `cd ../..`                         | Go up two directories.                                                      |
+| `....`         | `cd ../../..`                      | Go up three directories.                                                    |
+| `cd`           | `z`                                | Uses **zoxide** for intelligent, fuzzy directory jumping.                   |
+| `mkcd <dir>`   | `mkdir -p "$argv"; and cd "$argv"` | Creates a new directory and immediately navigates into it.                  |
+| `ls`           | `eza --icons`                      | Lists directory contents with file-specific icons.                          |
+| `ll`           | `eza -lh --git --header`           | Long, human-readable format with Git status.                                |
+| `lt`           | `eza --tree --level=2`             | Displays directory contents as a tree (2 levels deep).                      |
+| `cat`          | `bat --paging=never`               | Displays file contents with syntax highlighting (`bat`).                    |
+| `v`            | `nvim`                             | Runs Nvim                                                                   |
+| `fn`           | `nvim (fd --type f \| fzf)`        | **F**ind **N**vim: Finds a file with `fd` and `fzf` and opens it in Neovim. |
+| `pf`           | `fd --type f \| fzf \| xargs bat`  | **P**review **F**ile: Finds a file and previews its contents using `bat`.   |
+| `efc`          | `nvim ~/.config/fish/config.fish`  | **E**dit **F**ish **C**onfig: Quickly open the fish config file in Neovim.  |
+| `enc`          | `nvim ~/.config/nvim/init.lua`     | **E**dit **N**eovim **C**onfig: Quickly open the Neovim config file.        |
+| `ekc`          | `nvim ~/.config/kitty/kitty.conf`  | **E**dit **K**itty **C**onfig: Quickly open the Kitty terminal config file. |
 
 ---
 
@@ -116,39 +138,5 @@ Aliases to speed up common Git operations.
 | `gd`              | `git diff`                                   | Shows the differences between files.                                   |
 | `gl`              | `git log --oneline --graph --decorate`       | Displays a compact and graphical commit history.                       |
 | `gpush <message>` | `git add .; git commit -m "$argv"; git push` | A function to add, commit, and push all changes with a single command. |
-
----
-
-## 4. Power User & Workflow Integrations
-
-Commands that combine multiple tools for a powerful workflow.
-
-| Alias | Command                           | Description                                                                 |
-| :---- | :-------------------------------- | :-------------------------------------------------------------------------- |
-| `fn`  | `nvim (fd --type f \| fzf)`       | **F**ind **N**vim: Finds a file with `fd` and `fzf` and opens it in Neovim. |
-| `pf`  | `fd --type f \| fzf \| xargs bat` | **P**review **F**ile: Finds a file and previews its contents using `bat`.   |
-| `efc` | `nvim ~/.config/fish/config.fish` | **E**dit **F**ish **C**onfig: Quickly open the fish config file in Neovim.  |
-| `enc` | `nvim ~/.config/nvim/init.lua`    | **E**dit **N**eovim **C**onfig: Quickly open the Neovim config file.        |
-| `ekc` | `nvim ~/.config/kitty/kitty.conf` | **E**dit **K**itty **C**onfig: Quickly open the Kitty terminal config file. |
-
----
-
-## 5. Modern CLI Tool Replacements
-
-| Alias | Replaces | Command                  | Description                                              |
-| :---- | :------- | :----------------------- | :------------------------------------------------------- |
-| `ls`  | `ls`     | `eza --icons`            | Lists directory contents with file-specific icons.       |
-| `ll`  | `ls -l`  | `eza -lh --git --header` | Long, human-readable format with Git status.             |
-| `lt`  | `tree`   | `eza --tree --level=2`   | Displays directory contents as a tree (2 levels deep).   |
-| `cat` | `cat`    | `bat --paging=never`     | Displays file contents with syntax highlighting (`bat`). |
-
----
-
-## 6. `nnn` File Manager Configuration
-
-| Command        | Description                                                                                                              |
-| :------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| `nnn`          | Alias for `nnn -P p`, which starts `nnn` with the `preview-tui` plugin active.                                           |
-| `n` (Function) | A wrapper function that allows you to quit `nnn` and have your shell automatically `cd` into the directory you were last |
 
 ---

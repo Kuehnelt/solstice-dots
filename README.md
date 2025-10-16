@@ -17,7 +17,7 @@
 
 These are my personal dotfiles for daily driving Fedora KDE. This setup is a bit of a Frankenstein's monster, with some original work done by me. Most of it was inspired by a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master)'s and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/)'s dots, and many of the configs are just slightly tweaked versions from the official [Catppuccin](https://catppuccin.com/) repositories.
 
-Everything is themed with Catppuccin Mocha, with a heavy focus on CLI tools and ease of use.
+Everything is themed with Catppuccin Mocha, with a heavy focus on CLI tools since I've been using a mix of nvim and Obsidian for taking notes and writing for college.
 
 This repository contains:
 

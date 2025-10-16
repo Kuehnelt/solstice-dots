@@ -12,12 +12,27 @@ abbr fpu 'flatpak update -y'
 abbr fpi 'flatpak install'
 abbr fpr 'flatpak remove'
 
+abbr bck backup_dotfiles
+
 # Navigation
 alias cd='z'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+function cd -w='z'
+    z $argv || return
+    check_directory_for_new_repository
+end
+
+function check_directory_for_new_repository
+    set current_repository (git rev-parse --show-toplevel 2> /dev/null)
+    if [ "$current_repository" ] && [ "$current_repository" != "$last_repository" ]
+        onefetch -T programming markup prose --nerd-fonts
+    end
+    set -gx last_repository $current_repository
+end
 
 function mkcd
     mkdir -p "$argv"; and cd "$argv"
@@ -59,8 +74,8 @@ alias ekc='nvim ~/.config/kitty/kitty.conf'
 
 # Git
 abbr gs 'git status'
-abbr ga 'git add'
-abbr gc 'git commit'
+abbr ga 'git add .'
+abbr gc 'git commit -m'
 abbr gps 'git push'
 abbr gpl 'git pull'
 abbr gd 'git diff'

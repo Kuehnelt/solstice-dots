@@ -63,7 +63,6 @@ This repository contains:
   - [Full Opacity Fullscreen](https://store.kde.org/p/2316974)
   - [Krohnkite](https://github.com/anametologin/krohnkite)
 - Widgets:
-  - Panel configs: .config/plasma-org.kde.plasma.desktop-appletsrc
   - [Panel Colorizer](https://github.com/luisbocanegra/plasma-panel-colorizer): Transparent preset
   - [Wallpaper Effects](https://github.com/luisbocanegra/plasma-wallpaper-effects): Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color.
 - [Rofi](https://github.com/catppuccin/rofi): Catppuccin Mocha Theme with some inspiration taken from [here](https://github.com/adi1090x/rofi/blob/master/previews/launchers/type-7/3.png)
@@ -75,6 +74,7 @@ This repository contains:
   - [Catppuccin Theme](https://github.com/catppuccin/nvim)
   - [Obsidian Plugin](https://github.com/obsidian-nvim/obsidian.nvim)
 - Obsidian: [AnuPpuccin](https://github.com/AnubisNekhet/anuppuccin)
+- Glow: [Catppuccin Mocha](https://github.com/catppuccin/glamour)
 - Spotify: [Spicetify Cattpuccin Mocha Theme](https://github.com/catppuccin/spicetify)
 - Cava: [Cattpuccin Theme](https://github.com/catppuccin/cava/tree/main)
 - Zen Browser: [Cattpuccin Theme](https://github.com/catppuccin/zen-browser)

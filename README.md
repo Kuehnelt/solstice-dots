@@ -67,7 +67,7 @@ This repository contains:
   - [Wallpaper Effects](https://github.com/luisbocanegra/plasma-wallpaper-effects): Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color.
 - [Rofi](https://github.com/catppuccin/rofi): Catppuccin Mocha Theme with some inspiration taken from [here](https://github.com/adi1090x/rofi/blob/master/previews/launchers/type-7/3.png)
 - [Kitty](https://github.com/catppuccin/kitty): Catppuccin Mocha Theme
-- [Fish](https://github.com/catppuccin/fish):Catppuccin Mocha Theme
+- [Fish](https://github.com/catppuccin/fish): Catppuccin Mocha Theme
 - Starship: Initially inspired from [Greed-d Simple Catppuccin Prompt](https://github.com/catppuccin/starship/discussions/18)
 - Nvim:
   - [Lazyvim](https://github.com/LazyVim/LazyVim)
@@ -117,8 +117,8 @@ Commands for system updates and maintenance.
 
 | Alias/Abbr | Command                |
 | :--------- | :--------------------- |
-| `dup`      | `sudo dnf update -y`   | 
-| `din`      | `sudo dnf install`     | 
+| `dup`      | `sudo dnf update -y`   |
+| `din`      | `sudo dnf install`     |
 | `dre`      | `sudo dnf remove`      |
 | `fpu`      | `flatpak update -y`    |
 | `fpi`      | `flatpak install`      |
@@ -131,46 +131,47 @@ Commands for system updates and maintenance.
 
 ## 2. File System Navigation & Utilities
 
-| Alias/Abbr     | Command                            | 
-| :------------- | :--------------------------------- | 
-| `y`            | `yazi`                             |
-| `..`           | `cd ..`                            | 
-| `...`          | `cd ../..`                         | 
-| `....`         | `cd ../../..`                      |
-| `mv`           | `mv -v`                            |
-| `mvd`          | `mv -vr`                           |
-| `rm`           | `rm -v`                            |
-| `rmd`          | `rm -vr`                           |
-| `cp`           | `cp -v`                            |
-| `cpd`          | `cp -vr`                           |
-| `cd`           | `z`                                | 
-| `mkcd <dir>`   | `mkdir -p "$argv"; and cd "$argv"` | 
-| `ls`           | `eza -F --color=always --icons=always --group-directories-first`                          | 
-| `ll`           | `eza -F -l -h -m -u -U --color=always --icons=always --group-directories-first`           | 
-| `lt`           | `eza -F -T --level=3 --color=always --icons=always --group-directories-first`             | 
-| `la`           | `eza -F -a --color=always --icons=always --group-directories-first`                       |
-| `cat`          | `bat --wrap auto -n -P`            | 
-| `v`            | `nvim`                             | 
-| `vi`           | `nvim`                             |
-| `fn`           | `nvim (fd --type f \| fzf)`        | 
-| `s/sr/search`  | `batgrep "$argv" $(rg --files | fzf) -P`   |
-| `efc`          | `nvim ~/.config/fish/conf.d/aliases.fish`  | 
-| `enc`          | `nvim ~/.config/nvim/init.lua`     | 
-| `ekc`          | `nvim ~/.config/kitty/kitty.conf`  | 
+| Alias/Abbr         | Command                                                                                      |
+| :----------------- | :------------------------------------------------------------------------------------------- |
+| `y`                | `yazi`                                                                                       |
+| `..`               | `cd ..`                                                                                      |
+| `...`              | `cd ../..`                                                                                   |
+| `....`             | `cd ../../..`                                                                                |
+| `mv`               | `mv -v`                                                                                      |
+| `mvd`              | `mv -vr`                                                                                     |
+| `rm`               | `rm -v`                                                                                      |
+| `rmd`              | `rm -vr`                                                                                     |
+| `cp`               | `cp -v`                                                                                      |
+| `cpd`              | `cp -vr`                                                                                     |
+| `cd`               | `z`                                                                                          |
+| `mkcd <dir>`       | `mkdir -p "$argv"; and cd "$argv"`                                                           |
+| `ls`               | `eza -F --color=always --icons=always --group-directories-first`                             |
+| `ll`               | `eza -F -l -h -m -u -U --color=always --icons=always --group-directories-first`              |
+| `lt`               | `eza -F -T --level=3 --color=always --icons=always --group-directories-first`                |
+| `la`               | `eza -F -a --color=always --icons=always --group-directories-first`                          |
+| `cat`              | `bat --wrap auto -n -P`                                                                      |
+| `v`                | `nvim`                                                                                       |
+| `vi`               | `nvim`                                                                                       |
+| `fn`               | `nvim (fd --type f \| fzf)`                                                                  |
+| `s/sr/search`      | `batgrep "$argv" $(rg --files \| fzf) -P`                                                    |
+| `efc`              | `nvim ~/.config/fish/conf.d/aliases.fish`                                                    |
+| `enc`              | `nvim ~/.config/nvim/init.lua`                                                               |
+| `ekc`              | `nvim ~/.config/kitty/kitty.conf`                                                            |
+| `reader <keyword>` | `custom fish function to fetch a book from Project Gutenberg and open it in EPY epub reader` |
 
 ---
 
 ## 3. Git Workflow
 
-| Alias/Abbr        | Command                                      | 
-| :---------------- | :------------------------------------------- | 
-| `gs`              | `git status`                                 | 
+| Alias/Abbr        | Command                                      |
+| :---------------- | :------------------------------------------- |
+| `gs`              | `git status`                                 |
 | `ga`              | `git add`                                    |
 | `gc`              | `git commit`                                 |
 | `gps`             | `git push`                                   |
-| `gpl`             | `git pull`                                   | 
-| `gd`              | `git diff`                                   | 
-| `gl`              | `git log --oneline --graph --decorate`       | 
-| `gpush <message>` | `git add .; git commit -m "$argv"; git push` | 
+| `gpl`             | `git pull`                                   |
+| `gd`              | `git diff`                                   |
+| `gl`              | `git log --oneline --graph --decorate`       |
+| `gpush <message>` | `git add .; git commit -m "$argv"; git push` |
 
 ---

@@ -1,10 +1,4 @@
 function fish_greeting
-    set_color bryellow
-    echo "Welcome back to "(hostname)"!"
-    set_color normal
-
-    echo "" # Newline for spacing
-
     fastfetch
 
     echo ""
@@ -13,8 +7,10 @@ function fish_greeting
     set_color normal
     echo ""
 
+    set_color brblue
+    echo "Welcome back to "(hostname)"!"
+    set_color normal
+
     echo "Your current tasks are:"
     task next
-
-    echo ""
 end

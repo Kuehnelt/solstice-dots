@@ -4,39 +4,87 @@
 palette = "catppuccin_mocha"
 
 format = """
-$python$directory $git_branch$git_status$git_state$git_commit$character
+$os\
+$username\
+$shell\
+$hostname\
+$fill\
+$time
+$directory\
+$git_branch$git_status$git_state$git_commit\
+$lua\
+$c\
+$cpp\
+$cmake\
+$rust\
+$golang\
+$nodejs\
+$php\
+$ruby\
+$python\
+$character
 """
 
 right_format = """
-$cmd_duration
+$cmd_duration 
 """
 
-add_newline = false
+add_newline = true
+
+[fill]
+symbol = ' '
+style = 'bold green'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:lavender"
+format = '[  $time ]($style)'
+
+[os]
+disabled = false
+style = "bold blue"
+
+[username]
+show_always = true
+style_user = "bold fg:blue"
+style_root = "bold fg:red"
+format = '[$user]($style)'
+
+[shell]
+fish_indicator = '󰻴'  
+style = 'fg:teal italic bold'
+format = ' [running](bold fg:text italic) [$fish_indicator]($style)'
+disabled = false
+
+[hostname]
+ssh_only = false
+format = ' [on](bold fg:text) [$hostname](bold fg:mauve) '
+trim_at = '.companyname.com'
+disabled = false
 
 [character]
-success_symbol = "[ ](bold fg:blue)"
+success_symbol = "[  ](bold fg:blue)"
 error_symbol = "[  ](bold fg:red)"
-vimcmd_symbol = "[](bold fg:green)"
-
+vimcmd_symbol = "[ ](bold fg:green)"
 
 [git_branch]
-format = "[[\\[$symbol$branch](rosewater) | ](peach)"
-symbol = "  "
+format = "[ [\\[$symbol$branch](fg:sky) |](fg:sapphire)"
+symbol = " "
 
 [git_status]
-format = "$all_status$ahead_behind\\] "
+format = " $all_status$ahead_behind[\\]](fg:sky)"
 conflicted = "="
-ahead = "[⇡${count} ](green)"
-behind = "⇣${count} "
-diverged = "[⇕⇡${ahead_count} ⇣${behind_count} ](teal)"
+ahead = "[ ${count} ](green)"
+behind = "[ ${count} ](red) "
+diverged = "[ ${ahead_count} ⇣${behind_count} ](teal)"
 up_to_date = "[󰄸 ](bold green)"
-untracked = "[?${count} ](maroon)"
-stashed = "[󰏖  ](bold green)"
-modified = "[~${count} ](yellow)"
-staged = "[+${count} ](green)"
-renamed = "[»${count} ](peach)"
-# deleted = "[ ${count} ](bold red)"
-deleted = "[-${count} ](bold red)"
+untracked = "[ ${count} ](maroon)"
+stashed = "[󰏖 ](bold green)"
+modified = "[ ${count} ](yellow)"
+staged = "[ ${count} ](green)"
+renamed = "[ ${count} ](peach)"
+deleted = "[ ${count} ](bold red)"
 
 [git_commit]
 format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
@@ -53,25 +101,12 @@ am_or_rebase = "AM/REBASE"
 style = "yellow"
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 
-[python]
-symbol = " "
-format = '(\($virtualenv\) )($style)'
-
-[cmd_duration]
-min_time = 10
-format = '󰥔 [$duration](bold purple)'
-show_milliseconds = true
-
-
-
 [directory]
 home_symbol = "  "
 read_only = "  "
-style = "fg:yellow "
-# truncation_length = 6
-# truncation_symbol = " ••/"
-fish_style_pwd_dir_length = 1
-format = '[󰉋 $path]($style)'
+style = "fg:blue "
+fish_style_pwd_dir_length = 2
+format = '[󰉋 $path ]($style)'
 
 [directory.substitutions]
 "Desktop" = "  "
@@ -81,6 +116,118 @@ format = '[󰉋 $path]($style)'
 "Pictures" = "  "
 "Videos" = "  "
 "GitHub" = " 󰊤 "
+"vaults" = " 󰂺 "
+"personal" = " 󰛓 "
+".config" = " "
+
+[cmd_duration]
+min_time = 10
+format = '󰥔 [$duration](bold fg:mauve)'
+show_milliseconds = true
+
+[c]
+symbol = " "
+style = "fg:sapphire"
+format = '[\[[$symbol($version(-$name))]($style bold)\]]($style)'
+
+[cpp]
+symbol = " "
+style = "fg:sapphire"
+format = '[\[[$symbol($version(-$name))]($style bold)\]]($style)'
+
+[cmake]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[golang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[hg_branch]
+symbol = " "
+
+[lua]
+symbol = " "
+style = "fg:blue"
+format = '[\[[$symbol($version)]($style bold)\]]($style)'
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nodejs]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[php]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[pixi]
+symbol = "󰏗 "
+
+[python]
+symbol = "󰌠 "
+style = "fg:green"
+format = '[\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style bold)\]]($style)'
+
+[ruby]
+symbol = " "
+style  = "fg:red"
+format = '[\[[$symbol($version)]($style bold)\]]($style)'
+
+[rust]
+symbol = "󱘗 "
+format = '\[[$symbol($version)]($style)\]'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

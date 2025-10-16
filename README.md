@@ -115,52 +115,62 @@ Most of this configuration is an alternate keyboard layer mapped to the <kbd>Alt
 
 Commands for system updates and maintenance.
 
-| Alias/Abbr | Command                | Description                                       |
-| :--------- | :--------------------- | :------------------------------------------------ |
-| `dup`      | `sudo dnf update -y`   | Updates all system packages on Fedora (auto-yes). |
-| `din`      | `sudo dnf install`     | Installs a new package using DNF.                 |
-| `dre`      | `sudo dnf remove`      | Updates all Flatpak applications.                 |
-| `c`        | `clear`                | Clears the terminal screen.                       |
-| `reboot`   | `sudo reboot`          | Reboots the system.                               |
-| `shutdown` | `sudo shutdown -h now` | Shuts down the system immediately.                |
+| Alias/Abbr | Command                |
+| :--------- | :--------------------- |
+| `dup`      | `sudo dnf update -y`   | 
+| `din`      | `sudo dnf install`     | 
+| `dre`      | `sudo dnf remove`      |
+| `fpu`      | `flatpak update -y`    |
+| `fpi`      | `flatpak install`      |
+| `fpr`      | `flatpak remove`       |
+| `c`        | `clear`                |
+| `re`       | `sudo reboot`          |
+| `sd`       | `sudo shutdown -h now` |
 
 ---
 
-## 2. File System Navigation
+## 2. File System Navigation & Utilities
 
-Shortcuts for moving around the file system more efficiently.
-
-| Alias/Function | Command                            | Description                                                                 |
-| :------------- | :--------------------------------- | :-------------------------------------------------------------------------- |
-| `..`           | `cd ..`                            | Go up one directory.                                                        |
-| `...`          | `cd ../..`                         | Go up two directories.                                                      |
-| `....`         | `cd ../../..`                      | Go up three directories.                                                    |
-| `cd`           | `z`                                | Uses **zoxide** for intelligent, fuzzy directory jumping.                   |
-| `mkcd <dir>`   | `mkdir -p "$argv"; and cd "$argv"` | Creates a new directory and immediately navigates into it.                  |
-| `ls`           | `eza --icons`                      | Lists directory contents with file-specific icons.                          |
-| `ll`           | `eza -lh --git --header`           | Long, human-readable format with Git status.                                |
-| `lt`           | `eza --tree --level=2`             | Displays directory contents as a tree (2 levels deep).                      |
-| `cat`          | `bat --paging=never`               | Displays file contents with syntax highlighting (`bat`).                    |
-| `v`            | `nvim`                             | Runs Nvim                                                                   |
-| `fn`           | `nvim (fd --type f \| fzf)`        | **F**ind **N**vim: Finds a file with `fd` and `fzf` and opens it in Neovim. |
-| `pf`           | `fd --type f \| fzf \| xargs bat`  | **P**review **F**ile: Finds a file and previews its contents using `bat`.   |
-| `efc`          | `nvim ~/.config/fish/config.fish`  | **E**dit **F**ish **C**onfig: Quickly open the fish config file in Neovim.  |
-| `enc`          | `nvim ~/.config/nvim/init.lua`     | **E**dit **N**eovim **C**onfig: Quickly open the Neovim config file.        |
-| `ekc`          | `nvim ~/.config/kitty/kitty.conf`  | **E**dit **K**itty **C**onfig: Quickly open the Kitty terminal config file. |
+| Alias/Abbr     | Command                            | 
+| :------------- | :--------------------------------- | 
+| `y`            | `yazi`                             |
+| `..`           | `cd ..`                            | 
+| `...`          | `cd ../..`                         | 
+| `....`         | `cd ../../..`                      |
+| `mv`           | `mv -v`                            |
+| `mvd`          | `mv -vr`                           |
+| `rm`           | `rm -v`                            |
+| `rmd`          | `rm -vr`                           |
+| `cp`           | `cp -v`                            |
+| `cpd`          | `cp -vr`                           |
+| `cd`           | `z`                                | 
+| `mkcd <dir>`   | `mkdir -p "$argv"; and cd "$argv"` | 
+| `ls`           | `eza -F --color=always --icons=always --group-directories-first`                          | 
+| `ll`           | `eza -F -l -h -m -u -U --color=always --icons=always --group-directories-first`           | 
+| `lt`           | `eza -F -T --level=3 --color=always --icons=always --group-directories-first`             | 
+| `la`           | `eza -F -a --color=always --icons=always --group-directories-first`                       |
+| `cat`          | `bat --wrap auto -n -P`            | 
+| `v`            | `nvim`                             | 
+| `vi`           | `nvim`                             |
+| `fn`           | `nvim (fd --type f \| fzf)`        | 
+| `s/sr/search`  | `batgrep "$argv" $(rg --files | fzf) -P`   |
+| `efc`          | `nvim ~/.config/fish/conf.d/aliases.fish`  | 
+| `enc`          | `nvim ~/.config/nvim/init.lua`     | 
+| `ekc`          | `nvim ~/.config/kitty/kitty.conf`  | 
 
 ---
 
 ## 3. Git Workflow
 
-Aliases to speed up common Git operations.
-
-| Alias/Function    | Command                                      | Description                                                            |
-| :---------------- | :------------------------------------------- | :--------------------------------------------------------------------- |
-| `gs`              | `git status`                                 | Shows the current status of the repository.                            |
-| `ga`              | `git add .`                                  | Stages all new and modified files in the current directory.            |
-| `gp`              | `git push`                                   | Pushes committed changes to the remote repository.                     |
-| `gd`              | `git diff`                                   | Shows the differences between files.                                   |
-| `gl`              | `git log --oneline --graph --decorate`       | Displays a compact and graphical commit history.                       |
-| `gpush <message>` | `git add .; git commit -m "$argv"; git push` | A function to add, commit, and push all changes with a single command. |
+| Alias/Abbr        | Command                                      | 
+| :---------------- | :------------------------------------------- | 
+| `gs`              | `git status`                                 | 
+| `ga`              | `git add`                                    |
+| `gc`              | `git commit`                                 |
+| `gps`             | `git push`                                   |
+| `gpl`             | `git pull`                                   | 
+| `gd`              | `git diff`                                   | 
+| `gl`              | `git log --oneline --graph --decorate`       | 
+| `gpush <message>` | `git add .; git commit -m "$argv"; git push` | 
 
 ---

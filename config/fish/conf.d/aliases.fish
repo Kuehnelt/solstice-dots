@@ -25,7 +25,6 @@ end
 
 # Utilities
 abbr mv 'mv -v'
-abbr mvd 'mv -vr'
 
 abbr rm 'rm -v'
 abbr rmd 'rm -vr'
@@ -45,6 +44,9 @@ abbr src search
 function search
     batgrep "$argv" $(rg --files | fzf) -P
 end
+
+abbr r reader
+abbr read reader
 
 # NVim
 abbr v nvim

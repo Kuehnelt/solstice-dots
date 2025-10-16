@@ -138,7 +138,6 @@ Commands for system updates and maintenance.
 | `...`              | `cd ../..`                                                                                   |
 | `....`             | `cd ../../..`                                                                                |
 | `mv`               | `mv -v`                                                                                      |
-| `mvd`              | `mv -vr`                                                                                     |
 | `rm`               | `rm -v`                                                                                      |
 | `rmd`              | `rm -vr`                                                                                     |
 | `cp`               | `cp -v`                                                                                      |

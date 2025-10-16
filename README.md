@@ -14,7 +14,8 @@
 </div>
 
 # Description
-These are my personal dotfiles for daily driving Fedora KDE. This setup is a bit of a Frankenstein's monster, with little original work done by me. Most of it was inspired by a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master)'s and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/)'s dots, and many of the configs are just slightly tweaked versions from the official [Catppuccin](https://catppuccin.com/) repositories.
+
+These are my personal dotfiles for daily driving Fedora KDE. This setup is a bit of a Frankenstein's monster, with some original work done by me. Most of it was inspired by a mix of [Pazl27](https://github.com/Pazl27/dotfiles/tree/master)'s and [Emmale64](https://www.reddit.com/r/unixporn/comments/1o4lofv/kde_who_needs_hyprland/)'s dots, and many of the configs are just slightly tweaked versions from the official [Catppuccin](https://catppuccin.com/) repositories.
 
 Everything is themed with Catppuccin Mocha, with a heavy focus on CLI tools and ease of use.
 
@@ -65,16 +66,17 @@ This repository contains:
   - Panel configs: .config/plasma-org.kde.plasma.desktop-appletsrc
   - [Panel Colorizer](https://github.com/luisbocanegra/plasma-panel-colorizer): Transparent preset
   - [Wallpaper Effects](https://github.com/luisbocanegra/plasma-wallpaper-effects): Rounded borders, 15pts. Gaps: 32 top and bottom, 12 left and right, #1e1e2e Color.
-- [Rofi](https://github.com/catppuccin/rofi): Catppuccin Mocha Theme
+- [Rofi](https://github.com/catppuccin/rofi): Catppuccin Mocha Theme with some inspiration taken from [here](https://github.com/adi1090x/rofi/blob/master/previews/launchers/type-7/3.png)
 - [Kitty](https://github.com/catppuccin/kitty): Catppuccin Mocha Theme
 - [Fish](https://github.com/catppuccin/fish):Catppuccin Mocha Theme
-- Starship: Slightly modified [Greed-d Simple Catppuccin Prompt](https://github.com/catppuccin/starship/discussions/18)
+- Starship: Initially inspired from [Greed-d Simple Catppuccin Prompt](https://github.com/catppuccin/starship/discussions/18)
 - Nvim:
   - [Lazyvim](https://github.com/LazyVim/LazyVim)
   - [Catppuccin Theme](https://github.com/catppuccin/nvim)
   - [Obsidian Plugin](https://github.com/obsidian-nvim/obsidian.nvim)
 - Obsidian: [AnuPpuccin](https://github.com/AnubisNekhet/anuppuccin)
 - Spotify: [Spicetify Cattpuccin Mocha Theme](https://github.com/catppuccin/spicetify)
+- Cava: [Cattpuccin Theme](https://github.com/catppuccin/cava/tree/main)
 - Zen Browser: [Cattpuccin Theme](https://github.com/catppuccin/zen-browser)
 
 # Keyboard Keyd Mods
@@ -83,41 +85,41 @@ Most of this configuration is an alternate keyboard layer mapped to the <kbd>Alt
 
    <img src="./screnshots/keyboard.png">
 
-# Shortcuts and Aliases
+# Shortcuts and Aliases/Abbreviations
 
 ## 0. Custom Shortcuts
 
-| Shortcut                                                              | Action Description                 |
-| --------------------------------------------------------------------- | ---------------------------------- |
-| <kbd>Super</kbd>                                                      | Launches Rofi                       |
-| <kbd>Super</kbd> + <kbd>T</kbd>                                       | Launches Terminal (`kitty`)         |
-| <kbd>Super</kbd> + <kbd>Z</kbd>                                       | Launches Zen Browser                |
-| <kbd>Super</kbd> + <kbd>E</kbd>                                       | Launches File Explorer              |
-| <kbd>Super</kbd> + <kbd>S</kbd>                                       | Launches Spotify                    |
-| <kbd>Super</kbd> + <kbd>O</kbd>                                       | Launches Obsidian                   |
-| <kbd>Super</kbd> + <kbd>R</kbd>                                       | Launches Okular                     |
-| <kbd>Super</kbd> + <kbd>W</kbd>                                       | Toogles Overview                   |
-| <kbd>Super</kbd> + <kbd>G</kbd>                                       | Toogles Overview (grade)           |
-| <kbd>Super</kbd> + <kbd>Q</kbd>                                       | Closes Window                      |
-| <kbd>Super</kbd> + <kbd>F</kbd>                                       | Toogles Floating Window           |
-| <kbd>Super</kbd> + <kbd>H/J/K/L</kbd>                                 | Changes Window Focus               |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H/J/K/L</kbd>               | Changes Window Size                |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>H/J/K/L</kbd>              | Moves Window                        |
-| <kbd>Super</kbd> + <kbd>Tab</kbd>                                     | Minimizes Window                    |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>H/J/K/L</kbd>                | Changes Screen Focus               |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L</kbd> | Moves Window to next/previous Screen             |
+| Shortcut                                                              | Action Description                        |
+| --------------------------------------------------------------------- | ----------------------------------------- |
+| <kbd>Super</kbd>                                                      | Launches Rofi                             |
+| <kbd>Super</kbd> + <kbd>T</kbd>                                       | Launches Terminal (`kitty`)               |
+| <kbd>Super</kbd> + <kbd>Z</kbd>                                       | Launches Zen Browser                      |
+| <kbd>Super</kbd> + <kbd>E</kbd>                                       | Launches File Explorer                    |
+| <kbd>Super</kbd> + <kbd>S</kbd>                                       | Launches Spotify                          |
+| <kbd>Super</kbd> + <kbd>O</kbd>                                       | Launches Obsidian                         |
+| <kbd>Super</kbd> + <kbd>R</kbd>                                       | Launches Okular                           |
+| <kbd>Super</kbd> + <kbd>W</kbd>                                       | Toogles Overview                          |
+| <kbd>Super</kbd> + <kbd>G</kbd>                                       | Toogles Overview (grade)                  |
+| <kbd>Super</kbd> + <kbd>Q</kbd>                                       | Closes Window                             |
+| <kbd>Super</kbd> + <kbd>F</kbd>                                       | Toogles Floating Window                   |
+| <kbd>Super</kbd> + <kbd>H/J/K/L</kbd>                                 | Changes Window Focus                      |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H/J/K/L</kbd>               | Changes Window Size                       |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>H/J/K/L</kbd>              | Moves Window                              |
+| <kbd>Super</kbd> + <kbd>Tab</kbd>                                     | Minimizes Window                          |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>H/J/K/L</kbd>                | Changes Screen Focus                      |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L</kbd> | Moves Window to next/previous Screen      |
 | <kbd>Ctrl</kbd> + <kbd>,/.</kbd>                                      | Switches to next/previous Virtual Desktop |
-| <kbd>Ctrk</kbd> + <kbd>1/2/3/4/5</kbd>                                | Switches to a numbered Virtual Desktop      |
+| <kbd>Ctrk</kbd> + <kbd>1/2/3/4/5</kbd>                                | Switches to a numbered Virtual Desktop    |
 
 ## 1. System & Package Management
 
 Commands for system updates and maintenance.
 
-| Alias      | Command                | Description                                       |
+| Alias/Abbr | Command                | Description                                       |
 | :--------- | :--------------------- | :------------------------------------------------ |
-| `update`   | `sudo dnf upgrade -y`  | Updates all system packages on Fedora (auto-yes). |
-| `install`  | `sudo dnf install`     | Installs a new package using DNF.                 |
-| `fpupdate` | `flatpak update`       | Updates all Flatpak applications.                 |
+| `dup`      | `sudo dnf update -y`   | Updates all system packages on Fedora (auto-yes). |
+| `din`      | `sudo dnf install`     | Installs a new package using DNF.                 |
+| `dre`      | `sudo dnf remove`      | Updates all Flatpak applications.                 |
 | `c`        | `clear`                | Clears the terminal screen.                       |
 | `reboot`   | `sudo reboot`          | Reboots the system.                               |
 | `shutdown` | `sudo shutdown -h now` | Shuts down the system immediately.                |

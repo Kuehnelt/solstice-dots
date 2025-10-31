@@ -4,8 +4,11 @@ abbr c clear
 abbr re 'sudo reboot'
 abbr sd 'sudo shutdown -h now'
 
+abbr dnu 'sudo dnf update -y'
 abbr dup 'sudo dnf update -y'
+abbr dni 'sudo dnf install'
 abbr din 'sudo dnf install'
+abbr dne 'sudo dnf remove'
 abbr dre 'sudo dnf remove'
 
 abbr fpu 'flatpak update -y'
@@ -61,7 +64,11 @@ function search
 end
 
 abbr r reader
+abbr rea reader
 abbr read reader
+
+abbr feed 'russ read'
+abbr rss 'russ read'
 
 # NVim
 abbr v nvim

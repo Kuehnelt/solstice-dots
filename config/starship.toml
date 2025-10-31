@@ -52,14 +52,14 @@ style_root = "bold fg:red"
 format = '[$user]($style)'
 
 [shell]
-fish_indicator = '󰻴'  
+fish_indicator = '󰻴 '  
 style = 'fg:teal italic bold'
-format = ' [running](bold fg:text italic) [$fish_indicator]($style)'
+format = ' [running](bold fg:teal italic) [$fish_indicator]($style)'
 disabled = false
 
 [hostname]
 ssh_only = false
-format = ' [on](bold fg:text) [$hostname](bold fg:mauve) '
+format = '[on](bold italic fg:mauve) [$hostname](bold fg:mauve) '
 trim_at = '.companyname.com'
 disabled = false
 

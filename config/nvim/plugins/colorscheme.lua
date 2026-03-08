@@ -1,8 +1,9 @@
 return {
   "catppuccin/nvim",
-  lazy = true,
+  lazy = false,
   name = "catppuccin",
   opts = {
+    flavour = "mocha",
     lsp_styles = {
       underlines = {
         errors = { "undercurl" },

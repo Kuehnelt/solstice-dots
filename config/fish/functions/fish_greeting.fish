@@ -1,4 +1,5 @@
 function fish_greeting
+    fish_config theme choose "Catppuccin Mocha"
     fastfetch
 
     echo ""

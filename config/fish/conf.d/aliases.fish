@@ -26,6 +26,7 @@ abbr fpr 'flatpak remove'
 abbr bck backup_dotfiles
 
 # Navigation
+alias blog="z ~/human-vestiges/content/posts/ && ls && printf '---\ntitle: \"xxx\"\ndate: aaaa-mm-dd\ndraft: false\nhideToc: true\ntags: [\"xxx\"]\n---\n' > draft.md && nvim draft.md"
 alias cd='z'
 
 alias ..='cd ..'

@@ -79,5 +79,6 @@ return {
     { "<leader>ol", "<cmd>ObsidianLink<CR>", desc = "Insert Link" },
     { "<leader>oL", "<cmd>ObsidianLinks<CR>", desc = "Show Current Note Links" },
     { "<leader>or", "<cmd>ObsidianRename<CR>", desc = "Rename Linked Note" },
+    { "<leader>od", "<cmd>ObsidianDailies<CR>", desc = "Open a picker of daily notes" },
   },
 }
